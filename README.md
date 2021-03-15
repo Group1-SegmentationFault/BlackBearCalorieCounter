@@ -3,7 +3,7 @@
 The Black Bear Calorie Counter is an android application designed to help users track their intake of calories and macronutrients
 in order to help them gain, maintain, or lose weight (depending on their personal goals).
 
-The app is in very early stages of development. Android Studio is currently the primary tool for development.
+The app is in very early stages of development. Android Studio is currently the primary tool for development, which uses Java and XML as languages.
 
 Planned features:
 

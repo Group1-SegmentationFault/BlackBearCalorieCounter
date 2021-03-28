@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Black Bear Calorie Counter</string>
+    <string name="button">Button</string>
+    <string name="home">Home</string>
+    <string name="black_bear_calorie_counter">Black Bear Calorie Counter</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+</resources>

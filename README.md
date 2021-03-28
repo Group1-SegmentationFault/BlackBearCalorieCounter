@@ -15,3 +15,5 @@ Planned features:
 -Users have a section to record and track daily workouts.
 
 -Users can chose to track their steps, even while the application is suspended.
+
+Currently the software consists of a initial login screen and an activity that leads to a home screen. This app can be tested by cloning the repository into Android Studio and using a built in emulator.

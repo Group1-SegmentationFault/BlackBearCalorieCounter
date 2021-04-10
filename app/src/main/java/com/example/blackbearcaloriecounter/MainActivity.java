@@ -20,16 +20,10 @@ public class MainActivity extends AppCompatActivity {
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-
                 openMainActivity2();
-
             }
-
-
         });
-
     }
-
 
     public void openMainActivity2(){
         Intent intent1 = new Intent(this, MainActivity2.class);

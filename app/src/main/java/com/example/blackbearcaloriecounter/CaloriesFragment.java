@@ -47,12 +47,12 @@ public class CaloriesFragment extends Fragment{
 
 
                 if (male.isChecked()){
-                    cals = (10 * weight) + ((int)6.25*height) - 5*age + 5;
+                    cals = (int)(10 * weight * 0.454) + (int)(6.25*height*2.54) - 5*age + 5;
                     result.setText(Integer.toString(cals));
                 }
 
                 else if (female.isChecked()){
-                    cals = (10 * weight) + ((int)6.25 * height) - 5*age - 161;
+                    cals = (int)(10 * weight * 0.454) + (int)(6.25*height*2.54) - 5*age - 161;
                     result.setText(Integer.toString(cals));
                 }
 

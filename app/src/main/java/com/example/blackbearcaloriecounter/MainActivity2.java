@@ -7,6 +7,10 @@ import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,6 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
@@ -38,16 +43,12 @@ public class MainActivity2 extends AppCompatActivity {
                         case R.id.settings_icon:
                             selectedFragment = new SettingsFragment();
                             break;
-
-
                     }
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.bottom_navigation,
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
-
                     return true;
                 }
             };
-
 
 }

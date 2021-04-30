@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 if(Patterns.EMAIL_ADDRESS.matcher(email.getText().toString()).matches())
                     openMainActivity2();
                 else
+                    email.setError("E-mail is invalid.");
                     Toast.makeText(MainActivity.this,"E-mail is invalid.", Toast.LENGTH_SHORT).show();
             }
         });

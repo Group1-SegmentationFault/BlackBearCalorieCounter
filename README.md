@@ -22,3 +22,10 @@ Planned features:
 -Users have a section to record and track daily workouts.
 
 -Users can chose to track their steps, even while the application is suspended.
+
+Dependencies:
+androidx.appcombat 1.2.0
+com.google.android.material 1.3.0
+androidx.constrainlayout 2.0.4
+androidx.legacy 1.0.0
+androidx.navigation 2.2.2

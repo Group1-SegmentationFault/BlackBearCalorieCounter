@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 
 
 public class CaloriesFragment extends Fragment{
+    static boolean isValid = true;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -123,6 +124,23 @@ public class CaloriesFragment extends Fragment{
                         cals = (int)(BMR * TEE *1.17);
                     }
                 }
+
+
+
+                /* Validation code */
+
+                if(age < 16 || age > 120)
+                {
+                    isValid = false;
+                    ageText.setError("Invalid age");
+                }
+
+                if(weight < 50 || weight > 1000)
+                {
+                    isValid = false;
+                    weightText.setError("Invalid weight");
+                }
+
 
                 result.setText(Integer.toString(cals));
 

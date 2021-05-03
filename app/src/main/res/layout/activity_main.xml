@@ -31,13 +31,13 @@
         android:layout_width="342dp"
         android:layout_height="43dp"
         android:layout_marginTop="32dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/username"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleText"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/TitleText" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -61,5 +61,28 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/loginDescription"
+        android:layout_width="341dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="Use Bottom Bar to Navigate App"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/emailDescription"
+        android:layout_width="341dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="Email must follow valid format."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

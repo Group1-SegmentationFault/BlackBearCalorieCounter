@@ -1,20 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:flow_horizontalAlign="center"
+    tools:context=".MainActivity2">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Home Fragment"/>
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/homeDescriptionCont2"
+        android:layout_width="323dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text='To calculate your estimated daily caloric intake, select the "calories" icon on the bottom navigation bar.'
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeDescriptionCont" />
 
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="305dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="Welcome to Black Bear Calorie Counter"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/homeDescription"
+        android:layout_width="346dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="Black Bear Calorie Counter is a health and fitness app with the goal of giving the user a set of effective tools they can use to help reach their health goals, free from any advertisement. "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTitle" />
+
+    <TextView
+        android:id="@+id/homeDescriptionCont"
+        android:layout_width="323dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text='The app is a work in progress with one current "Calorie Counter" feature. This feature allows a user to input their age, weight, height, sex, current physical activity, and current weight goals to receive a suggested daily caloric intake amount.'
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

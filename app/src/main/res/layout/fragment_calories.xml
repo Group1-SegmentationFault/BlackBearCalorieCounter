@@ -170,8 +170,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="148dp"
-        android:layout_height="84dp"
+        android:layout_width="355dp"
+        android:layout_height="87dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -182,19 +182,19 @@
             android:id="@+id/loseButton"
             android:layout_width="match_parent"
             android:layout_height="26dp"
-            android:text="Lose Weight" />
+            android:text="Goal: Lose Weight (appx. -1lb/week)" />
 
         <RadioButton
             android:id="@+id/maintainButton"
             android:layout_width="match_parent"
             android:layout_height="26dp"
-            android:text="Maintain Weight" />
+            android:text="Goal: Maintain Weight (appx. 0lb/week)" />
 
         <RadioButton
             android:id="@+id/gainButton"
             android:layout_width="match_parent"
             android:layout_height="26dp"
-            android:text="Gain Weight" />
+            android:text="Goal: Gain Weight (appx. +1lb/week)" />
     </RadioGroup>
 
 
